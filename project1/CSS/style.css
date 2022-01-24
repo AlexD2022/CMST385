@@ -1,0 +1,11 @@
+h1 {
+  text-align: center
+}
+p {
+  text-align: center; 
+  text-shadow: 2px 2px 4px blue;
+  border-style: dotted;
+  border-color: blue;
+  border-width: 5px;
+  padding: 10px;
+}
