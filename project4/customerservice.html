@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Project 4 Customer Service</title>
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+        </style>
+    </head>
+    <header>       
+        <h1>Target</h1>
+    </header><hr>
+        <div id="logo">
+            <img class="TargetNavLogo" src="images/targetlogo2.jpg" alt="Target Logo">
+        </div>
+        <nav> 
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="inventory.html">Inventory/Shop</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="customerservice.html">Customer Service</a></li>
+                <li><a href="loginregister.html">Login/Register</a></li>
+            </ul>
+        </nav><hr>
+    <body>
+        <h2 class="liBorder">Customer Service</h2><br>
+        <p class="liBorder">Seach Problem Solving Articles<br>
+        <input class="input" type="text" placeholder="search..."><button type="submit">submit</button></p><br>
+
+        <p class="liBorder">Call a Customer Service Representative At:<br>
+        <strong>1-800-555-5555</strong><br><br>
+        Email a Representative: <a href="mailto:CustomerService@BuyTarget.com">CustomerService@BuyTarget.com</a>
+        </p><br>
+
+        <p class="liBorder">Live Chat/Text With a Customer Service Representative.    
+        <button class="open-button" onclick="openForm()">Chat/Text</button>
+        <div class="chat-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>Chat/Text</h1>
+                <label for="msg"><b>Message</b></label>
+                <textarea placeholder="Example: A shirt was sent to me, but it was the wrong size."
+                name="msg" required></textarea>
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close Chat/Text</button>
+            </form>
+        </div>
+        <script>
+            function openForm() {
+                document.getElementById("myForm").style.display = "block";
+            }
+            function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+            }
+        </script></p>
+    </body>
+    <br><footer>copyright 2022</footer>
+</html>    
